@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Almendra', serif;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    position: relative;
+    min-width: 100%;
+}
+
+.page {
+    background-color: #d0d0d5;
+}
+
+.header {
+    position: absolute;
+    padding: 20px 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: #d0d0d5;;
+    background-color: #3b3b4f;
+    box-shadow: rgb(0 0 0 / 20%) 5px 3px 8px;
+}
+
+.footer {
+    position: absolute;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: #d0d0d5;;
+    background-color: #3b3b4f;
+    box-shadow: rgb(0 0 0 / 20%) 5px -3px 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.container {
+    display: flex;
+    width: 464px;
+    height: 464px;
+    background-color: whitesmoke;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    
+}
+
+.square {
+    width: calc((464px / 16) + 1.01px);
+    height: calc((464px / 16) + 1.01px);
+    border: 1px solid transparent;
+    margin: -1px 0 0 -1px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-github  {
+    color: #d0d0d5;
+}
+
+input[type=color] {
+    width: 100%;
+    height: 100%;
+    background-color: black 0% 0% no-repeat padding-box;
+    transform: scale(1.5);
+    background:#000;
+}
+
+.color-pick {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 7px;
+    margin: 0 50px;
+    border: 2px solid black;
+    background:#000;
+}
+
+.buttons {
+    border: 2px solid #3b3b4f;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 24px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 7px;
+    margin-right: 50px;
+}
+
+.buttons:hover {
+    background-color: #3b3b4f;
+    color: white;
+    transition: 0.2s;
+    border: 2px solid white;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 15px;
+    background:  whitesmoke;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 7px;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+
+input#myRange.slider {
+    width: 100%;
+}
+
+.numDivs {
+    background-color: whitesmoke;
+    border: 2px solid #3b3b4f;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 2px 4px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 7px;
+}
+
+.menu > .numDivs {
+    font-size: 12px;
+}
